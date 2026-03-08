@@ -1,6 +1,6 @@
 # NFL Receiver Route Q-Learning
 
-An application of tabular Q-learning to NFL receiver route tracking data from the [NFL Big Data Bowl 2021](https://www.kaggle.com/competitions/nfl-big-data-bowl-2021). The project models receiver movement as a reinforcement learning problem, learning which directions tend to lead to completions from any position on the field. Results are explored through an interactive Shiny app and a frame-by-frame GIF animation.
+An application of tabular Q-learning to NFL receiver route tracking data from the [NFL Big Data Bowl 2023](https://www.kaggle.com/competitions/nfl-big-data-bowl-2023). The project models receiver movement as a reinforcement learning problem, learning which directions tend to lead to completions from any position on the field. Results are explored through an interactive Shiny app and a frame-by-frame GIF animation.
 
 **Author:** Brayden Butt
 
@@ -48,7 +48,7 @@ Each cell is divided into four triangles — one per direction — colored on a 
 
 ## Data
 
-This project uses tracking data from the **NFL Big Data Bowl 2021**, available on Kaggle. The following files are required in the working directory:
+This project uses tracking data from the **NFL Big Data Bowl 2023**, available on Kaggle. The following files are required in the working directory:
 
 | File | Description |
 |------|-------------|
@@ -58,7 +58,7 @@ This project uses tracking data from the **NFL Big Data Bowl 2021**, available o
 
 The tracking files contain `x`, `y`, `frameId`, `playDirection`, `event`, `nflId`, and `gameId` among other columns. Movement is normalized relative to each player's position at the snap so that all routes are oriented in the same direction regardless of which end of the field the play occurred on.
 
-> **Note:** Data files are not included in this repository and must be downloaded separately from the [NFL Big Data Bowl 2021 Kaggle page](https://www.kaggle.com/competitions/nfl-big-data-bowl-2021). The data is subject to Kaggle's terms of use. Place all CSV files in the same directory as the R scripts before running.
+> **Note:** Data files are not included in this repository and must be downloaded separately from the [NFL Big Data Bowl 2023 Kaggle page](https://www.kaggle.com/competitions/nfl-big-data-bowl-2023). The data is subject to Kaggle's terms of use. Place all CSV files in the same directory as the R scripts before running.
 
 ---
 
@@ -138,4 +138,4 @@ The code in this repository is original work by Brayden Butt. The NFL Big Data B
 
 ## Acknowledgements
 
-Data sourced from the [NFL Big Data Bowl 2021](https://www.kaggle.com/competitions/nfl-big-data-bowl-2021), hosted by the NFL and Kaggle. Player headshot data sourced via the [`nflreadr`](https://nflreadr.nflverse.com/) package.
+Data sourced from the [NFL Big Data Bowl 2023](https://www.kaggle.com/competitions/nfl-big-data-bowl-2023), hosted by the NFL and Kaggle. Player headshot data sourced via the [`nflreadr`](https://nflreadr.nflverse.com/) package.
